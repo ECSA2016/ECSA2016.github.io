@@ -137,7 +137,7 @@
 			-webkit-font-smoothing:antialiased;
 			-moz-osx-font-smoothing:grayscale;
 		}
-
+		.fa-checked{color:#000}
 		.fa-lg{font-size:1.3333333333333333em;line-height:.75em;vertical-align:-15%}
 		.fa-2x{font-size:2em}
 		.fa-3x{font-size:3em}
@@ -684,6 +684,7 @@ ul.style3 .first {
 
 	#page {
 		padding: 5em 0em;
+		padding-bottom: 2em;
 		background: #FFF
 	}
 	
@@ -704,7 +705,7 @@ ul.style3 .first {
 	
 	#footer
 	{
-		padding: 5em 0em;
+		padding: 2em 0em;
 	}
 
 
