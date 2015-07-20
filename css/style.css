@@ -543,7 +543,7 @@ ul.style1 {
 }
 
 ul.style1 li {
-	display: inline-block;
+	display: block;
 	padding: 1em 0em;
 	border-top: 1px solid #E6E6E6;
 	line-height: 160%;
@@ -701,6 +701,7 @@ ul.style3 .first {
 
 	#content
 	{
+            display: block;
 	}
 	
 	#footer
@@ -737,3 +738,11 @@ ul.style3 .first {
 		padding: 5em 0em;
 		background: #FFF
 	}	
+        
+        side-bar{
+            width: 25%;
+        }
+        
+        content-part{
+            width: 75%;
+        }
