@@ -1,0 +1,8 @@
+<nav id="nav">
+    <ul>
+        <li ng-repeat="element in tabCtrl.navElements"
+            ng-class="{active: tabCtrl.isSelected(element.tabNumber)}">
+            <a href ng-click="tabCtrl.selectTab(element.tabNumber)">{{element.name}}</a>
+        </li>
+    </ul>
+</nav>
