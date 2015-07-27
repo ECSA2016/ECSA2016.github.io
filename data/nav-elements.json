@@ -1,0 +1,16 @@
+[ {
+    name : 'Home',
+    tabNumber : 0
+}, {
+    name : 'Conference Program',
+    tabNumber : 1
+}, {
+    name : 'Call for Papers',
+    tabNumber : 2
+}, {
+    name : 'Registration',
+    tabNumber : 9
+}, {
+    name : 'Venue',
+    tabNumber : 10
+} ]

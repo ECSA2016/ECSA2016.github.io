@@ -1,0 +1,28 @@
+[ {
+    name : 'Workshops',
+    tabNumber : 3
+}, {
+    name : 'Call for Tool Demos',
+    tabNumber : 4
+}, {
+    name : 'Keynotes',
+    tabNumber : 5
+}, {
+    name : 'Organization',
+    tabNumber : 6
+}, {
+    name : 'Program Committee',
+    tabNumber : 7
+}, {
+    name : 'Important Dates',
+    tabNumber : 8
+}, {
+    name : 'Accommodation',
+    tabNumber : 11
+}, {
+    name : 'Travel',
+    tabNumber : 12
+}, {
+    name : 'Previous Years',
+    tabNumber : 13
+} ]
