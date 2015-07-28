@@ -1,12 +1,12 @@
 (function() {
 	var app = angular.module('conference', []);
 
-        app.directive('logoPart', function (){
-            return {
-                restrict:'E',
-                templateUrl:'page_parts/logo-part.html'
-            };
-        });
+    app.directive('logoPart', function (){
+        return {
+            restrict:'E',
+            templateUrl:'page_parts/logo-part.html'
+        };
+    });
 
 	app.directive('sideBar', function() {
 		return {
@@ -113,45 +113,114 @@
 			templateUrl : "tabs/previous-years.html"
 		};
 	});
+	app.directive('summaryOfProposal', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/summary-of-proposal.html"
+		};
+	});
+	app.directive('countryAndCity', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/country-and-city.html"
+		};
+	});
+	app.directive('socialEvents', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/social-events.html"
+		};
+	});
+	app.directive('knowladgeOfTheLocation', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/knowladge-of-the-location.html"
+		};
+	});
+	app.directive('timing', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/timing.html"
+		};
+	});
+	app.directive('financialEstimates', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/financial-estimates.html"
+		};
+	});
+	app.directive('organizers', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/organizers.html"
+		};
+	});
+	app.directive('sponsorPartnerOther', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/sponsor-partner-other.html"
+		};
+	});
+	app.directive('conferenceLogistics', function() {
+		return {
+			restrict : 'E',
+			templateUrl : "tabs/conference-logistics.html"
+		};
+	});
         
-        app.directive('hostPart', function (){
-            return {
-                restrict:'E',
-                templateUrl:'page_parts/host-part.html',
-                controller : function (){
-                    this.elements = hostElements;
-                },
-                controllerAs: 'hostCtrl'
-            };
-        });
-        
-        app.directive('sponsorPart', function (){
-           return {
-               restrict :'E',
-               templateUrl :'page_parts/sponsor-part.html',
-               controller : function (){
-                   this.elements = sponsorElements;
-               },
-               controllerAs:'sponsorCtrl'
-           };
-        });
-    
-    
-        app.directive('galleryPart', function(){
-            return {
-                restrict :'E',
-                templateUrl:'page_parts/gallery-part.html',
-                controller : function (){
-                    this.current = 0;
-                    this.images = gallery;
-                    
-                    this.setCurrent = function(imageNumber){
-                    this.current = imageNumber || 0;
-                    }
-                },
-                controllerAs :'galleryCtrl'
-            };
-        });
+    app.directive('hostPart', function (){
+        return {
+            restrict:'E',
+            templateUrl:'page_parts/host-part.html',
+            controller : function (){
+                this.elements = hostElements;
+            },
+            controllerAs: 'hostCtrl'
+        };
+    });
+
+    app.directive('sponsorPart', function (){
+       return {
+           restrict :'E',
+           templateUrl :'page_parts/sponsor-part.html',
+           controller : function (){
+               this.elements = sponsorElements;
+           },
+           controllerAs:'sponsorCtrl'
+       };
+    });
+
+    app.directive('galleryPart', function(){
+        return {
+            restrict :'E',
+            templateUrl:'page_parts/gallery-part.html',
+            controller : function (){
+                this.current = 0;
+                this.images = gallery;
+
+                this.setCurrent = function(imageNumber){
+                this.current = imageNumber || 0;
+                }
+            },
+            controllerAs :'galleryCtrl'
+        };
+    });
+
+    app.directive('ikuGalleryPart', function(){
+        return {
+            restrict :'E',
+            templateUrl:'page_parts/iku-gallery-part.html',
+            controller : function (){
+                this.current = 0;
+                this.images = ikuGallery;
+
+                this.setCurrent = function(imageNumber){
+                this.current = imageNumber || 0;
+                }
+            },
+            controllerAs :'ikuGalleryCtrl'
+        };
+    });
            
 //        app.directive('twitterPart', function (){
 //           return {
@@ -182,6 +251,8 @@
             this.navElements = navElements;
             this.sideElements = sideElements;
             this.contentElements = contentElements;
+            this.showPanel = "hidePanel";
+            this.shiftBody = "fixBody";
 
             this.selectTab = function(setTab) {
                     this.tabNumber = setTab;
@@ -190,110 +261,160 @@
             this.isSelected = function(checkTab) {
                     return this.tabNumber === checkTab;
             };
+            
+            this.setPanel = function(){
+                if(this.showPanel === "hidePanel"){
+                    this.showPanel = "showPanel";
+                    this.shiftBody = "shiftBody";
+                } else{
+                    this.showPanel = "hidePanel";
+                    this.shiftBody = "fixBody";
+                }
+            };
         });
         
 	var navElements = [ {
-		name : 'Home',
 		tabNumber : 0
 	}, {
-		name : 'Conference Program',
 		tabNumber : 1
 	}, {
-		name : 'Call for Papers',
 		tabNumber : 2
 	}, {
-		name : 'Registration',
 		tabNumber : 9
 	}, {
-		name : 'Venue',
 		tabNumber : 10
 	} ];
 
 	var sideElements = [ {
-		name : 'Workshops',
 		tabNumber : 3
 	}, {
-		name : 'Call for Tool Demos',
 		tabNumber : 4
 	}, {
-		name : 'Keynotes',
 		tabNumber : 5
 	}, {
-		name : 'Organization',
 		tabNumber : 6
 	}, {
-		name : 'Program Committee',
 		tabNumber : 7
 	}, {
-		name : 'Important Dates',
 		tabNumber : 8
 	}, {
-		name : 'Accommodation',
 		tabNumber : 11
 	}, {
-		name : 'Travel',
 		tabNumber : 12
 	}, {
-		name : 'Previous Years',
 		tabNumber : 13
-	} ];
+	}, {
+        tabNumber : 14
+     }, {
+        tabNumber : 15
+     }, {
+        tabNumber : 16
+     }, {
+        tabNumber : 17
+     }, {
+        tabNumber : 18
+     }, {
+        tabNumber : 19
+     }, {
+        tabNumber : 20
+     }, {
+        tabNumber : 21
+     }, {
+        tabNumber : 22
+     } ];
     
         var contentElements = [{
-                name : "home",
+		name : 'Home',
                 number : 0,
                 link : 'home.html'
         }, {
-                name : "conference-program",
+		name : 'Conference Program',
                 number : 1,
                 link : 'conference-program.html'
         }, {
-                name : "call-for-papers",
+		name : 'Call for Papers',
                 number : 2,
                 link : 'call-for-papers.html'
         }, {
-                name : "workshops",
+		name : 'Workshops',
                 number : 3,
                 link : 'workshops.html'
         }, {
-                name : "call-for-tool-demos",
+		name : 'Call for Tool Demos',
                 number : 4,
                 link : 'call-for-tool-demos.html'
         }, {
-                name : "keynotes",
+		name : 'Keynotes',
                 number : 5,
                 link : 'keynotes.html'
         }, {
-                name : "organization",
+		name : 'Organization',
                 number : 6,
                 link : 'organization.html'
         }, {
-                name : "program-committee",
+		name : 'Program Committee',
                 number : 7,
                 link : 'program-committee.html'
         }, {
-                name : "important-dates",
+		name : 'Important Dates',
                 number : 8,
                 link : 'important-dates.html'
         }, {
-                name : "registration",
+		name : 'Registration',
                 number : 9,
                 link : 'registration.html'
         }, {
-                name : "venue",
+		name : 'Venue',
                 number : 10,
                 link : 'venue.html'
         }, {
-                name : "accommodation",
+		name : 'Accommodation',
                 number : 11,
                 link : 'accommodation.html'
         }, {
-                name : "travel",
+		name : 'Travel',
                 number : 12,
                 link : 'travel.html'
         }, {
-                name : "previous-years",
+		name : 'Previous Years',
                 number : 13,
                 link : 'previous-years.html'
+        }, {
+        name : "Summary of Proposal",
+                number : 14,
+                link : 'summary-of-proposal.html'
+        }, {
+        name : "Country and City",
+                number : 15,
+                link : 'country-and-city.html'
+        }, {
+        name : "Social Events",
+                number : 16,
+                link : 'social-events.html'
+        }, {
+        name : "Knowladge of the Location",
+                number : 17,
+                link : 'knowladge-of-the-location.html'
+        }, {
+        name : "Timing",
+                number : 18,
+                link : 'timing.html'
+        }, {
+        name : "Financial Estimates",
+                number : 19,
+                link : 'financial-estimates.html'
+        }, {
+        name : "Organizers",
+                number : 20,
+                link : 'organizers.html'
+        }, {
+        name : "Sponsors, Partners, Other Events",
+                number : 21,
+                link : 'sponsor-partner-other.html'
+        }, {
+        name : "Conference Logistics and Publicity",
+                number : 22,
+                link : 'conference-logistics.html'
         }];
     
     var hostElements = [ {
@@ -332,5 +453,27 @@
         small : "images/istanbul/ist-5(small).jpg",
         normal : "images/istanbul/ist-5.jpg",
         number : 4
-    }]
+    }];
+    
+    var ikuGallery = [{
+        small : "images/iku/iku-1(small).png",
+        normal : "images/iku/iku-1.png",
+        number : 0
+    } ,{
+        small : "images/iku/iku-2(small).png",
+        normal : "images/iku/iku-2.png",
+        number : 1
+    } ,{
+        small : "images/iku/iku-3(small).png",
+        normal : "images/iku/iku-3.png",
+        number : 2
+    } ,{
+        small : "images/iku/iku-4(small).png",
+        normal : "images/iku/iku-4.png",
+        number : 3
+    } ,{
+        small : "images/iku/iku-5(small).png",
+        normal : "images/iku/iku-5.png",
+        number : 4
+    }];
 })();

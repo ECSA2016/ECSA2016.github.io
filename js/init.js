@@ -31,27 +31,5 @@ skel.init({
 		}
 	}
 }, {
-	panels: {
-		panels: {
-			navPanel: {
-				breakpoints: 'mobile',
-				position: 'left',
-				style: 'reveal',
-				size: '80%',
-				html: '<div data-action="navList" data-args="nav"></div>'
-			}
-		},
-		overlays: {
-			titleBar: {
-				breakpoints: 'mobile',
-				position: 'top-left',
-				height: 44,
-				width: '100%',
-				html: '<span class="toggle" data-action="togglePanel" data-args="navPanel"></span>' +
- '<span class="title" data-action="copyHTML" data-args="logo"></span>'
-			}
-		}
-	}
-	
-	
+
 });
