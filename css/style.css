@@ -761,20 +761,25 @@ ul.style3 .first {
 @media screen and (max-width: 400px) {
     
     img{
-        max-width: 330px;
+        max-width: 90%;
     }
     
    #wrapper{
-        width: 380px;
+        max-width: 100%;
+    }
+    
+    body{
+    max-width: 100%;
     }
     
     .shiftBody{
-        position: relative; 
+        position: fixed; 
         left: 0px; right: 0px; top: 0px; 
         backface-visibility: hidden; 
         transition: -webkit-transform 0.25s ease-in-out; 
         z-index: 10001; 
-        transform: translate(300px, 0px);
+        max-width: 100%;
+        transform: translate(75%, 0px);
     }
     
     .fixBody{
@@ -783,8 +788,7 @@ ul.style3 .first {
         left: 0px; right: 0px; top: 0px; 
         backface-visibility: hidden; 
         transition: -webkit-transform 0.25s ease-in-out;    
-        max-width: 400px;
-        min-width: 400px;
+        max-width: 100%;
     }
     
      .hidePanel{
@@ -793,8 +797,8 @@ ul.style3 .first {
         z-index: 10000; position: fixed; 
         display: none; 
         overflow-y: scroll;
-        top: 0px; left: -300px; 
-        width: 300px; height: 100%;
+        top: 0px; left: -75%; 
+        width: 75%; height: 100%;
     }
     
 	.showPanel
@@ -805,8 +809,8 @@ ul.style3 .first {
         z-index: 10000; position: fixed; 
         display: block; 
         overflow-y: scroll;
-        top: 0px; left: -300px; 
-        width: 300px; height: 100%;
+        top: 0px; left: -75%; 
+        width: 75%; height: 100%;
 	}
 
 		.showPanel .link
