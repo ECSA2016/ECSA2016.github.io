@@ -125,49 +125,7 @@
 			templateUrl : "tabs/country-and-city.html"
 		};
 	});
-	app.directive('socialEvents', function() {
-		return {
-			restrict : 'E',
-			templateUrl : "tabs/social-events.html"
-		};
-	});
-	app.directive('knowladgeOfTheLocation', function() {
-		return {
-			restrict : 'E',
-			templateUrl : "tabs/knowladge-of-the-location.html"
-		};
-	});
-	app.directive('timing', function() {
-		return {
-			restrict : 'E',
-			templateUrl : "tabs/timing.html"
-		};
-	});
-	app.directive('financialEstimates', function() {
-		return {
-			restrict : 'E',
-			templateUrl : "tabs/financial-estimates.html"
-		};
-	});
-	app.directive('organizers', function() {
-		return {
-			restrict : 'E',
-			templateUrl : "tabs/organizers.html"
-		};
-	});
-	app.directive('sponsorPartnerOther', function() {
-		return {
-			restrict : 'E',
-			templateUrl : "tabs/sponsor-partner-other.html"
-		};
-	});
-	app.directive('conferenceLogistics', function() {
-		return {
-			restrict : 'E',
-			templateUrl : "tabs/conference-logistics.html"
-		};
-	});
-        
+
     app.directive('hostPart', function (){
         return {
             restrict:'E',
@@ -307,20 +265,6 @@
         tabNumber : 14
      }, {
         tabNumber : 15
-     }, {
-        tabNumber : 16
-     }, {
-        tabNumber : 17
-     }, {
-        tabNumber : 18
-     }, {
-        tabNumber : 19
-     }, {
-        tabNumber : 20
-     }, {
-        tabNumber : 21
-     }, {
-        tabNumber : 22
      } ];
     
         var contentElements = [{
@@ -387,35 +331,7 @@
         name : "Country and City",
                 number : 15,
                 link : 'country-and-city.html'
-        }, {
-        name : "Social Events",
-                number : 16,
-                link : 'social-events.html'
-        }, {
-        name : "Knowladge of the Location",
-                number : 17,
-                link : 'knowladge-of-the-location.html'
-        }, {
-        name : "Timing",
-                number : 18,
-                link : 'timing.html'
-        }, {
-        name : "Financial Estimates",
-                number : 19,
-                link : 'financial-estimates.html'
-        }, {
-        name : "Organizers",
-                number : 20,
-                link : 'organizers.html'
-        }, {
-        name : "Sponsors, Partners, Other Events",
-                number : 21,
-                link : 'sponsor-partner-other.html'
-        }, {
-        name : "Conference Logistics and Publicity",
-                number : 22,
-                link : 'conference-logistics.html'
-        }];
+        } ];
     
     var hostElements = [ {
             name : 'IKU',
