@@ -27,6 +27,10 @@
 		font-weight: 300;
 	}
 
+    h2 {
+        font-size: 2em;
+    }
+
 	p {
 		margin-bottom: 1.5em;
 		line-height: 180%;
@@ -551,7 +555,6 @@ ul.style1 li {
 	display: block;
 	padding: 1em 0em;
 	border-top: 1px solid #E6E6E6;
-	line-height: 160%;
 }
 
 ul.style1 span
@@ -801,8 +804,7 @@ ul.style3 .first {
         width: 75%; height: 100%;
     }
     
-	.showPanel
-	{
+	.showPanel{
 		background: #323338;
         backface-visibility: hidden; 
         transition: -webkit-transform 0.25s ease-in-out; 
@@ -813,26 +815,6 @@ ul.style3 .first {
         width: 75%; height: 100%;
 	}
 
-		.showPanel .link
-		{
-			display: block;
-			color: #888;
-			text-decoration: none;
-			height: 44px;
-			line-height: 44px;
-			border-top: solid 1px #3f4046;
-			padding: 0 1em 0 1em;
-		}
-		
-			.showPanel .link:first-child
-			{
-				border-top: 0;
-			}
-			
-			.showPanel .link.depth-0
-			{
-				color: #fff;
-			}
 
 			.showPanel .indent-1 { display: inline-block; width: 1em; }
 			.showPanel .indent-2 { display: inline-block; width: 2em; }
@@ -931,7 +913,6 @@ ul.style3 .first {
     #nav a
 	{
         padding: 9px 25px 9px 25px;
-        background: #fffdfd;
         border-radius: 5px;
         line-height: normal;
         text-align: center;
@@ -941,8 +922,9 @@ ul.style3 .first {
         font-size: 16px;
         font-weight: 500;
         padding-top: 10px;
-        color: #323338;
         display: block;
+        color: white;
+        border: 1px solid white;
 	}
     
     #nav li{			
@@ -953,7 +935,6 @@ ul.style3 .first {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1.1em;
-        color: #FFF;
         -moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
         -webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
         -o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
