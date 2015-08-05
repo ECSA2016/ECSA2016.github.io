@@ -1099,4 +1099,9 @@ ul.style3 .first {
     #skel-panels-pageWrapper{
         max-width: 400px;
     }
+    
+     #googleMap{
+     width: 250px;
+        height: 300px;
+    }
 }
