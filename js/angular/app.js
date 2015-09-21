@@ -10,7 +10,7 @@
 
 	app.directive('sideBar', function() {
 		return {
-			restrict : 'E',
+			restrict : 'E'
 			templateUrl : 'page_parts/side-bar.html'
 		};
 	});
@@ -111,12 +111,6 @@
 		return {
 			restrict : 'E',
 			templateUrl : "tabs/previous-years.html"
-		};
-	});
-	app.directive('summaryOfProposal', function() {
-		return {
-			restrict : 'E',
-			templateUrl : "tabs/summary-of-proposal.html"
 		};
 	});
 	app.directive('countryAndCity', function() {
@@ -323,10 +317,6 @@
 		name : 'Previous Years',
                 number : 13,
                 link : 'previous-years.html'
-        }, {
-        name : "Summary of Proposal",
-                number : 14,
-                link : 'summary-of-proposal.html'
         }, {
         name : "Country and City",
                 number : 15,
