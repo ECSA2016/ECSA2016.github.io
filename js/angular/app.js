@@ -10,7 +10,7 @@
 
 	app.directive('sideBar', function() {
 		return {
-			restrict : 'E'
+			restrict : 'E',
 			templateUrl : 'page_parts/side-bar.html'
 		};
 	});
