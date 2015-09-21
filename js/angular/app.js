@@ -257,9 +257,7 @@
 		tabNumber : 13
 	}, {
         tabNumber : 14
-     }, {
-        tabNumber : 15
-     } ];
+    } ];
     
         var contentElements = [{
 		name : 'Home',
@@ -319,7 +317,7 @@
                 link : 'previous-years.html'
         }, {
         name : "Country and City",
-                number : 15,
+                number : 14,
                 link : 'country-and-city.html'
         } ];
     
