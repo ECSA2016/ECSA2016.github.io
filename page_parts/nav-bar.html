@@ -3,9 +3,8 @@
 <div class="{{tabCtrl.showPanel}}">
     <nav id="nav">
         <ul>
-            <li ng-repeat="element in tabCtrl.navElements"
-                ng-class="{active: tabCtrl.isSelected(element.tabNumber)}" ng-click="tabCtrl.setPanel()">
-                <a href="#{{element.tabNumber}}" ng-click="tabCtrl.selectTab(element.tabNumber)">{{tabCtrl.contentElements[element.tabNumber].name}}</a>
+            <li ng-repeat="element in tabCtrl.NAV_ELEMENT" ng-class="{active: tabCtrl.isSelected(element)}" ng-click="tabCtrl.setPanel()">
+                <a href="#{{element.id}}" ng-click="tabCtrl.selectTab(element)">{{element.name}}</a>
             </li>
         </ul>
     </nav>
