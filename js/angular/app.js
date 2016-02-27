@@ -55,6 +55,12 @@
             templateUrl: "tabs/call-for-tool-demos.html"
         };
     });
+    app.directive('womanInSe', function () {
+        return {
+            restrict: 'E',
+            templateUrl: "tabs/woman-in-se.html"
+        };
+    });
     app.directive('keynotes', function () {
         return {
             restrict: 'E',
@@ -224,6 +230,11 @@
             name: 'Call for Tool Demos',
             id: "call_for_tool_demos",
             link: 'call-for-tool-demos.html'
+        },
+        WOMAN_IN_SE: {
+            name: 'Track on Woman in Software Architecture',
+            id: "woman_in_se",
+            link: 'woman-in-se.html'
         },
         KEYNOTES: {
             name: 'Keynotes',
