@@ -127,6 +127,12 @@
             templateUrl: "tabs/country-and-city.html"
         };
     });
+    app.directive('sponsorshipPackages', function () {
+        return {
+            restrict: 'E',
+            templateUrl: "tabs/sponsorship-packages.html"
+        };
+    });
     app.directive('hostPart', function () {
         return {
             restrict: 'E',
@@ -286,6 +292,11 @@
             name: "Country and City",
             id: "country_and_city",
             link: 'country-and-city.html'
+        },
+        SPONSORSHIP_PACKAGES: {
+            name: "Sponsorship Packages",
+            id: "sponsorship_packages",
+            link: 'sponsorship-packages.html'
         }
     };
     NAV_ELEMENT = {
