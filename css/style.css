@@ -45,7 +45,23 @@ h2 {
 }
 
 h3 {
+    font-size: 1.8em;
+}
+
+h4 {
     font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 0.9em;
+}
+
+h7 {
+    font-size: 0.6em;
 }
 
 p {
@@ -2392,4 +2408,14 @@ content-part {
     #skel-panels-pageWrapper {
         max-width: 400px;
     }
+}
+
+.workshop {
+    text-align: justify;
+    padding: 5px 5px;
+}
+
+.workshopinfo {
+    background: #dff4f9;
+    padding: inherit;
 }
