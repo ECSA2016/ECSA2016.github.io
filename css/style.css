@@ -2419,3 +2419,21 @@ content-part {
     background: #dff4f9;
     padding: inherit;
 }
+
+.foldParagraph {
+    display: none;
+}
+
+#detailsParagraphLabel {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#detailsParagraph {
+    display: none;
+}
+
+#detailsParagraph:checked ~.foldParagraph {
+    display: block;
+}
