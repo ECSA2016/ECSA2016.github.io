@@ -17,6 +17,7 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-panels.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/sublink.js"></script>
 
     <link rel="stylesheet" href="css/skel-noscript.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -28,15 +29,6 @@
 <body class="{{tabCtrl.shiftBody}}" ng-controller="tabController as tabCtrl">
     <script type="text/javascript" src="js/angular/app.js"></script>
     <script type="text/javascript">
-        window.onload = function () {
-            elementId = document.location.hash.substring(1);
-            selector = '[href="#'.concat(elementId).concat('"]');
-            a = document.querySelector(selector);
-            if (a != null) {
-                a.click();
-            }
-            angular.element(a).triggerHandler('click');
-        };
     </script>
 
     <div id="wrapper">
