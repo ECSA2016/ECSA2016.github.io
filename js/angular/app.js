@@ -337,11 +337,15 @@
         {
             name: 'ACM',
             link: 'http://www.acm.org/',
-            image: 'http://ecsa-conference.org/2015/images/ACM_ICPS_logo_small.png'
+            image: 'images/sponsors/acm.png'
     }, {
             name: 'Springer',
             link: 'http://www.springer.com/computer/lncs?SGWID=0-164-0-0-0',
-            image: 'http://ecsa-conference.org/2015/images/springer_lncs_logo_small.png'
+            image: 'images/sponsors/springer.png'
+    }, {
+            name: 'THY',
+            link: 'http://www.turkishairlines.com/',
+            image: 'images/sponsors/thy.jpg'
     }
     ];
     var gallery = [
