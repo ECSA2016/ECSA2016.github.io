@@ -344,7 +344,7 @@
             image: 'images/sponsors/springer.png'
     }, {
             name: 'THY',
-            link: 'http://www.turkishairlines.com/',
+            link: 'https://www4.thy.com/TKC/',
             image: 'images/sponsors/thy.jpg'
     }
     ];
