@@ -344,7 +344,7 @@
             image: 'images/sponsors/springer.png'
     }, {
             name: 'THY',
-            link: 'https://www4.thy.com/TKC/',
+            link: 'https://www4.thy.com/TKC/app/main?language=en',
             image: 'images/sponsors/thy.jpg'
     }
     ];
