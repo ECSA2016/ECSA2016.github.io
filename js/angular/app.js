@@ -342,7 +342,11 @@
             name: 'Springer',
             link: 'http://www.springer.com/computer/lncs?SGWID=0-164-0-0-0',
             image: 'images/sponsors/springer.png'
-    }
+    }, {
+			name: 'THY',
+            link: 'https://www4.thy.com/TKC/app/main?language=en',
+            image: 'images/sponsors/thy-alliance.jpg'
+	}
     ];
     var gallery = [
         {
