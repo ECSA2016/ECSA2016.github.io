@@ -2411,7 +2411,7 @@ content-part {
 }
 
 .thy {
-    background-color: #ff6666;
+    border: 5px solid green;
 }
 
 .workshop {
