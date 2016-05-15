@@ -2410,6 +2410,10 @@ content-part {
     }
 }
 
+.thy {
+    background-color: #ff6666;
+}
+
 .workshop {
     text-align: justify;
     padding: 5px 5px;
