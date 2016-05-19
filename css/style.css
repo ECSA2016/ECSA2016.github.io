@@ -123,7 +123,7 @@ strong {
 }
 
 header {
-    margin-bottom: 2.5em;
+    margin-bottom: 1em;
 }
 
 header h2 {
@@ -138,6 +138,13 @@ header h3 {
     letter-spacing: 0px;
     font-weight: 750;
     font-size: 1.7em;
+    color: #323338;
+}
+
+header h4 {
+    letter-spacing: 0px;
+    font-weight: 750;
+    font-size: 1.4em;
     color: #323338;
 }
 
