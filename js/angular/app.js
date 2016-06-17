@@ -338,11 +338,15 @@
 			name: 'THY',
             link: 'https://www4.thy.com/TKC/app/main?language=en',
             image: 'images/sponsors/thy-alliance.jpg'
-	}, {
-        name: 'Cybersoft',
-        link: 'http://www.cybersoft.com.tr/ENG/?q=node',
-        image: 'images/sponsors/cybersoft.png'
-    }
+	    }, {
+            name: 'Havelsan',
+            link: 'http://www.havelsan.com.tr/ENG/Main',
+            image: 'images/sponsors/havelsan.jpg'
+        }, {
+            name: 'Cybersoft',
+            link: 'http://www.cybersoft.com.tr/ENG/?q=node',
+            image: 'images/sponsors/cybersoft.png'
+        }
     ];
     var gallery = [
         {

@@ -2448,3 +2448,24 @@ content-part {
 #detailsParagraph:checked ~.foldParagraph {
     display: block;
 }
+
+.sptable {
+    border: 1px solid #ededed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 14px;
+	line-height: 2;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+.sptable td {
+    font-weight: normal;
+	text-align: center;
+}
+
+.sptable td {
+	border: 1px solid #ededed;
+	padding: 6px 10px 6px 6px;
+	vertical-align: middle;
+}
