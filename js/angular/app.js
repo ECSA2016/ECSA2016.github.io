@@ -258,6 +258,11 @@
             id: "keynotes",
             link: 'keynotes.html'
         },
+        REGISTRATION: {
+            name: 'Registration',
+            id: "registration",
+            link: 'registration.html'
+        },
         ORGANIZATION: {
             name: 'Organization',
             id: "organization",
