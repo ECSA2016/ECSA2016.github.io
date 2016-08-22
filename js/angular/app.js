@@ -339,11 +339,14 @@
     }
     ];
     var sponsorElements = [
+        /**
         {
 			name: 'THY',
             link: 'https://www4.thy.com/TKC/app/main?language=en',
             image: 'images/sponsors/thy-alliance.jpg'
-	    }, {
+	    }, 
+        **/
+        {
             name: 'Havelsan',
             link: 'http://www.havelsan.com.tr/ENG/Main',
             image: 'images/sponsors/havelsan.jpg'
